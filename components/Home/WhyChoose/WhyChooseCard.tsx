@@ -33,3 +33,5 @@ const WhyChooseCard = ({ image, title }: Props) => {
 }
 
 export default WhyChooseCard
+
+//sprihacode
