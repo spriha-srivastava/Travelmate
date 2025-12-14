@@ -25,7 +25,7 @@ const WhyChooseCard = ({ image, title }: Props) => {
         {title}
       </h1>
 
-      <p className="text-center text-gray-600 mt-2">
+      <p className="text-center text-xs font-medium text-gray-700 mt-2">
         vghghvgjhkhvjhh
       </p>
     </div>
