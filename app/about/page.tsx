@@ -30,10 +30,10 @@ const AboutPage = () => {
   ];
 
   const team = [
-    { name: 'Sarah Johnson', role: 'Founder & CEO', image: '/images/a1.jpg' },
-    { name: 'Michael Chen', role: 'Head of Operations', image: '/images/a2.jpg' },
-    { name: 'Emma Williams', role: 'Travel Director', image: '/images/a3.jpg' },
-    { name: 'David Kumar', role: 'Customer Relations', image: '/images/a4.jpg' },
+    { name: 'Sarah Johnson', role: 'Founder & CEO', image: '/images/p1.jpg' },
+    { name: 'Michael Chen', role: 'Head of Operations', image: '/images/p3.jpg' },
+    { name: 'Emma Williams', role: 'Travel Director', image: '/images/p2.jpg' },
+    { name: 'David Kumar', role: 'Customer Relations', image: '/images/p5.jpg' },
   ];
 
   return (
@@ -97,13 +97,13 @@ const AboutPage = () => {
               Making Travel Dreams Come True Since 2009
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Travelmate was born from a simple idea: everyone deserves to experience the magic of travel. 
-              What started as a small team of passionate travelers has grown into a global community 
+              Travelmate was born from a simple idea: everyone deserves to experience the magic of travel.
+              What started as a small team of passionate travelers has grown into a global community
               dedicated to creating unforgettable journeys.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              We believe that travel is more than just visiting new places – it&apos;s about connecting 
-              with different cultures, creating lasting memories, and discovering new perspectives. 
+              We believe that travel is more than just visiting new places – it&apos;s about connecting
+              with different cultures, creating lasting memories, and discovering new perspectives.
               Our mission is to make these experiences accessible to everyone.
             </p>
             <button className="px-8 py-3 bg-rose-500 hover:bg-rose-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/30">
