@@ -50,13 +50,14 @@ const AboutPage = () => {
         <div className="absolute inset-0 z-20 flex items-center justify-center">
           <div className="text-center px-4">
             <div className="flex items-center justify-center mb-6">
-              <div className="w-16 h-16 bg-rose-500 rounded-full flex items-center justify-center">
+              {/* <div className="w-16 h-16 bg-rose-500 rounded-full flex items-center justify-center">
                 <TbAirBalloon className="w-10 h-10 text-white" />
-              </div>
+              </div> */}
+
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+                About <span className="text-rose-400">Travelmate</span>
+              </h1>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              About <span className="text-rose-400">Travelmate</span>
-            </h1>
             <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
               Your trusted companion for extraordinary travel experiences around the world
             </p>

@@ -7,7 +7,7 @@ const DestinationPage = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <div className="relative h-[50vh] w-full">
+      <div className="relative h-[65vh] w-full">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-950/90 to-blue-900/70 z-10" />
         <Image
           src="/images/a3.jpg"
