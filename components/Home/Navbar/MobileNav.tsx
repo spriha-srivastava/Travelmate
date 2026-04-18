@@ -31,9 +31,11 @@ const MobileNav = ({closeNav, showNav}:props) => {
 
         {/* Book Now button in mobile menu */}
         <div className='ml-12 mt-6'>
-          <button className='px-8 py-3 text-rose-900 text-base bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg font-semibold'>
-            Book Now
-          </button>
+          <Link href="/booking" onClick={closeNav}>
+            <button className='px-8 py-3 text-rose-900 text-base bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg font-semibold'>
+              Book Now
+            </button>
+          </Link>
         </div>
 
       {/*close button*/}

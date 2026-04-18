@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { TbAirBalloon } from 'react-icons/tb'
 import Link from 'next/link'
 import { HiBars3BottomRight } from 'react-icons/hi2'
+import { usePathname } from 'next/navigation'
 
 type props = {
   openNav: () => void
@@ -11,6 +12,7 @@ type props = {
 const Nav = ({ openNav }: props) => {
 
   const [navBg, setNavBg] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handler = () => {
@@ -21,9 +23,11 @@ const Nav = ({ openNav }: props) => {
     return () => window.removeEventListener('scroll', handler);
   }, [])
 
+  const isSolidBg = navBg || pathname !== '/';
+
   return (
     <div
-      className={`${navBg ? 'bg-blue-950 shadow-md' : ''} transition-all duration-200 h-[12vh] z-[1000] fixed w-full`}>
+      className={`${isSolidBg ? 'bg-blue-950 shadow-md' : ''} transition-all duration-200 h-[12vh] z-[1000] top-0 fixed w-full`}>
       <div className='flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto'>
 
         {/* Logo */}
@@ -56,9 +60,11 @@ const Nav = ({ openNav }: props) => {
         {/* Right side - Book Now button and burger menu */}
         <div className='flex items-center space-x-3 sm:space-x-4'>
           {/* Book Now - hidden on mobile, shown on larger screens */}
-          <button className='hidden sm:block md:px-12 md:py-2.5 px-6 py-2 text-black text-sm md:text-base bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg font-medium'>
-            Book Now
-          </button>
+          <Link href="/booking">
+            <button className='hidden sm:block md:px-12 md:py-2.5 px-6 py-2 text-black text-sm md:text-base bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg font-medium'>
+              Book Now
+            </button>
+          </Link>
           {/* Burger menu - visible only on mobile */}
           <HiBars3BottomRight onClick={openNav} className='w-7 h-7 sm:w-8 sm:h-8 cursor-pointer text-white lg:hidden' />
         </div>
